@@ -4,7 +4,7 @@ import { useSyncExternalStore } from "react";
 import { Button } from "./ui/button";
 import { FaGithub } from "react-icons/fa";
 import { Playfair_Display } from "next/font/google";
-import { AUTH_CHANGE_EVENT, getUser, logout } from "@/lib/client-auth";
+import { AUTH_CHANGE_EVENT, logout, type AuthUser } from "@/lib/client-auth";
 import { useRouter } from "next/navigation";
 import { TbBallpen } from "react-icons/tb";
 import Link from "next/link";
@@ -25,7 +25,12 @@ function subscribeToAuthChanges(callback: () => void) {
 const Navbar = () => {
   const router = useRouter();
 
-  const user = useSyncExternalStore(subscribeToAuthChanges, getUser, () => null);
+  const storedUser = useSyncExternalStore(
+    subscribeToAuthChanges,
+    () => localStorage.getItem("user"),
+    () => null,
+  );
+  const user = storedUser ? (JSON.parse(storedUser) as AuthUser) : null;
 
   function handleLogout() {
     logout();
