@@ -13,6 +13,7 @@ const font_Inter = Inter({
 
 export const metadata: Metadata = {
   title: "Lumora",
+  description:"Lumora is a minimal blogging app focused on distraction-free writing and reading."
 };
 
 export default function RootLayout({
