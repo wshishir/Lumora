@@ -43,6 +43,7 @@ const Navbar = () => {
         <Link
           href="/"
           className={`${font_Playfair.className} font-bold text-2xl cursor-pointer`}
+          aria-label="home page"
         >
           Lumora
         </Link>
@@ -53,6 +54,7 @@ const Navbar = () => {
           href="https://github.com/yshishir/Lumora"
           className="cursor-pointer"
           target="_blank"
+          aria-label="source code on github"
           rel="noopener noreferrer"
         >
           <FaGithub className="size-6 text-foreground" />
