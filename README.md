@@ -3,7 +3,7 @@
 Lumora is a modern, minimal blog app built for distraction-free reading and writing.  
 Build with secure authentication, clean and responsive UI & CRUD functionality for blogs.
 
-## Demo
+## Preview 📸
 
 https://github.com/user-attachments/assets/41f0aa41-0264-43df-bc76-f021c4019af5
 
