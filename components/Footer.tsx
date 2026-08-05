@@ -8,7 +8,7 @@ const Footer = () => {
       <p className="flex items-center gap-1.5">
         Made with <FaHeart className="size-4 text-foreground" /> by{" "}
         <span className="underline-offset-2 underline">
-          <a href="https://x.com/yeshishir" target="_blank" aria-label="visit my twitter/X profile">
+          <a href="https://x.com/shishirdotcom" target="_blank" aria-label="visit my twitter/X profile">
             {" "}
             Shishir
           </a>
